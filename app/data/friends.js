@@ -7,7 +7,7 @@ var friends = [
    },
    {
       "name":"Joe",
-      "photo":"http://www.billboard.com/files/media/joe-walid-azami-2014-billboard-650.jpg",
+      "photo":"https://www.billboard.com/files/media/joe-walid-azami-2014-billboard-650.jpg",
       "scores":[4,2,5,1,3,2,2,1,3,2]
    },
    {
@@ -17,7 +17,7 @@ var friends = [
    },
    {
       "name":"Kelly",
-      "photo":"http://cdn02.cdn.justjared.com/wp-content/uploads/headlines/2016/05/kelly-ripas-live-new-name-logo.jpg",
+      "photo":"https://cdn02.cdn.justjared.com/wp-content/uploads/headlines/2016/05/kelly-ripas-live-new-name-logo.jpg",
       "scores":[3,3,4,2,2,1,3,2,2,3]
    },
    {
