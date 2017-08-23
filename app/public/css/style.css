@@ -16,6 +16,9 @@
 #textbox {
 	text-align: center;
 }
+.modal-body {
+	text-align: center;
+}
 body {
 	background: #1A2432;
 }
@@ -33,4 +36,7 @@ hr {
 #resultsModal img {
 	overflow: hidden;
 	width: 500px;
+}
+#matchImg {
+	width: 300px;
 }
