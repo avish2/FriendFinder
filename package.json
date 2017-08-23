@@ -1,0 +1,33 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "friend finding app",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0"
+  },
+  "engines": {
+    "node": "5.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avish2/FriendFinder.git"
+  },
+  "keywords": [
+    "express",
+    "node"
+  ],
+  "author": "Angela Vish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avish2/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/avish2/FriendFinder#readme"
+}
