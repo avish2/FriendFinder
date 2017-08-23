@@ -38,7 +38,7 @@
     <input type="text" name="" id="photo" class="form-control" required>
     <hr>
   
-    <h4>I live for the weekend.</h4>
+    <h4>I live for the weekend</h4>
     <select data-placeholder="" class="chosen-select" id="q1">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -60,7 +60,7 @@
     </select>
 
 
-    <h4>I prefer a night indoors than at the club</h4>
+    <h4>I prefer a night indoors to a night at the club</h4>
     <select data-placeholder="" class="chosen-select" id="q3">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -82,7 +82,7 @@
     </select>
 
 
-    <h4>I can live without music</h4>
+    <h4>I can't live without music</h4>
     <select data-placeholder="" class="chosen-select" id="q5">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -154,7 +154,7 @@
     <br>
     <footer class="footer text-center">
       <div class="container">
-        <p>&copy; 2017 Angela Vish</p>
+        <p id="copy">&copy; 2017 Angela Vish</p>
       </div>
     </footer>
   </div>
@@ -168,6 +168,7 @@
           <h2 class="modal-title"><strong>Best Match</strong></h2>
         </div>
         <div class="modal-body">
+          <h3 id="matchPercent"></h3>
           <h2 id="matchName"></h2>
           <img id="matchImg" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
         </div>
@@ -225,6 +226,7 @@
       // AJAX post the data to the friends API. 
       $.post(currentURL + "/api/friends", userData, function(data) {
         // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+        $("#matchPercent").text("You are a " + data.friendDifference + "% match with");
         $("#matchName").text(data.name);
         $('#matchImg').attr("src", data.photo);
         // Show the modal with the best match 

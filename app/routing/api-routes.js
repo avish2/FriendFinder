@@ -65,13 +65,15 @@ module.exports = function(app){
 			console.log("indx: " + index);
 		  }
 		}
-
-				//if (userData.name !== friends[index].name) {
-					// Reset the bestMatch to be the new friend. 
-					bestMatch.name = friends[index].name;
-					bestMatch.photo = friends[index].photo;
-					bestMatch.friendDifference = totalDifference;
-				//};
+		//convert totalDifference into a percentage to be displayed on the HTML
+		var percentMatch = 100 - (totalDifference*2.5)
+		
+		//if (userData.name !== friends[index].name) {
+			// Reset the bestMatch to be the new friend. 
+			bestMatch.name = friends[index].name;
+			bestMatch.photo = friends[index].photo;
+			bestMatch.friendDifference = percentMatch;
+		//};
 			
 		
 
